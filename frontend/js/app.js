@@ -120,3 +120,29 @@ async function changeIssueStatus(issue) {
 }
 
 loadIssues();
+
+issueForm.addEventListener('submit', (event) => {
+ event.preventDefault();
+ const newIssue = {
+ id: `ISS-${Date.now()}`,
+ title: titleInput.value.trim(),
+ description: descriptionInput.value.trim(),
+ priority: priorityInput.value,
+ status: 'Open',
+ createdAt: new Date().toISOString()
+ };
+ issues.push(newIssue);
+ issueForm.reset();
+ priorityInput.value = 'Medium';
+ formMessage.textContent = 'Issue added to the local browser session.';
+ renderIssues();
+});
+function toggleIssueStatus(issueId) {
+ const issue = issues.find((item) => item.id === issueId);
+ if (!issue) {
+ console.error('Issue not found:', issueId);
+ return;
+ }
+ issue.status = issue.status === 'Open' ? 'Resolved' : 'Open';
+ renderIssues();
+}
