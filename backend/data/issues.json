@@ -6,5 +6,37 @@
     "priority": "High",
     "status": "Open",
     "createdAt": "2026-09-01T09:00:00.000Z"
+  },
+  {
+    "id": "ISS-1792945071425",
+    "title": "Printer unavailable",
+    "description": "The shared printer is not responding.",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-10-25T16:17:51.425Z"
+  },
+  {
+    "id": "ISS-1792945770318",
+    "title": "Title Example",
+    "description": "Missing valid title",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-10-25T16:29:30.318Z"
+  },
+  {
+    "id": "ISS-1792946110223",
+    "title": "Projector flickering",
+    "description": "The projector in room B204 flickers.",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-10-25T16:35:10.223Z"
+  },
+  {
+    "id": "ISS-1792948281816",
+    "title": "Printer unavailable",
+    "description": "The shared printer is not responding.",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-10-25T17:11:21.816Z"
   }
 ]
